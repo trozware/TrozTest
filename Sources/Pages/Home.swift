@@ -9,6 +9,6 @@ struct Home: StaticPage {
             .font(.title1)
 
         Text("This is a test site so I can check out the Ignite framework and how to serve it.")
-        Text("The Bootstrap CSS & JS files are not found in the deployment because they are not in the root folder.")
+        Text("Bootstrap now working, but local preview is not. But now building to docs folder!")
     }
 }

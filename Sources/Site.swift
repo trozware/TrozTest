@@ -7,7 +7,7 @@ struct IgniteWebsite {
         let site = ExampleSite()
 
         do {
-            try await site.publish()
+            try await site.publish(buildDirectoryPath: "docs")
         } catch {
             print(error.localizedDescription)
         }
@@ -17,8 +17,10 @@ struct IgniteWebsite {
 struct ExampleSite: Site {    
     var name = "Troz"
     var titleSuffix = " – Test"
-    var url = URL(string: "https://trozware.github.io/TrozTest")!
+    var url = URL(string: "https://trozware.github.io")!
+//    var url = URL(string: "https://trozware.github.io/TrozTest")!
     var builtInIconsEnabled = true
+
 
     var author = "Sarah Reichelt"
 
