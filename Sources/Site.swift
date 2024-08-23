@@ -14,15 +14,20 @@ struct IgniteWebsite {
     }
 }
 
+// to test, run: ignite run -d docs --preview
+
 struct ExampleSite: Site {    
     var name = "Troz"
     var titleSuffix = " – Test"
-    var url = URL(string: "https://trozware.github.io")!
-//    var url = URL(string: "https://trozware.github.io/TrozTest")!
-    var builtInIconsEnabled = true
-
-
     var author = "Sarah Reichelt"
+
+    // For local testing
+    // var url = URL(string: "https://trozware.github.io")!
+
+    // For build & deploy
+    var url = URL(string: "https://trozware.github.io/TrozTest")!
+
+    var builtInIconsEnabled = true
 
     var homePage = Home()
     var theme = MyTheme()
