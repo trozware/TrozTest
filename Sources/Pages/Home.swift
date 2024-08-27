@@ -12,5 +12,6 @@ struct Home: StaticPage {
         Text("Bootstrap now working and now building to docs folder!")
 
         Text("Adjust the <code>url</code> in <strong>Site.swift</strong> to switch between preview and build versions.")
+      Text(Date().description)
     }
 }
